@@ -11,7 +11,6 @@
     <base href="<$path />">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
     <script src="../vendor/js/jquery.min.js"></script>
     <script src="../vendor/js/bootstrap.bundle.min.js"></script>
 </head>
