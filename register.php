@@ -4,7 +4,7 @@
 <body>
 <?php
   require_once('./include/navbar.html');
-  require_once('./pages/register.php');
+  require_once('./pages/register.html');
   require_once('./include/footer.html');
 ?>
 </body>

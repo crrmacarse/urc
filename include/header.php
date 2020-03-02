@@ -1,6 +1,6 @@
 <?php
     require_once('./path.php');
-    require_once('./db/connection.php');
+    require_once('./db/connect.php');
 ?>
 
 <head>
