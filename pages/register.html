@@ -3,7 +3,7 @@
     <p class="hint-text">Create your account. </p>
     <form id="frmRegister">
         <div class="form-group">
-            <input type="text" class="form-control" name="USERNAME" placeholder="Username" required="required" value="">
+            <input type="text" id="frmRegisterUsername" class="form-control" name="USERNAME" placeholder="Username" required="required" value="">
         </div>
         <div class="form-group">
             <div class="row">
@@ -29,13 +29,6 @@
                 placeholder="Confirm Password" required="required">
         </div>
         <div class="form-group">
-            <select class="custom-select" name="USER_TYPE" required>
-                <option value="" selected>Select User Type</option>
-                <option value="admin">Admin</option>
-                <option value="student">Student</option>
-            </select>
-        </div>
-        <div class="form-group">
             <button id="frmBtnRegister" type="submit" class="btn btn-info btn-lg btn-block">Register Now</button>
         </div>
         <div class="text-center">Already have an account? <a href="../login.php">Sign in</a></div>
@@ -49,7 +42,7 @@
             var FormData = $('#frmRegister').serialize();
             var formPassword = $('#frmRegisterPassword');
             var formConfirmPassword = $('#frmRegisterConfirmPassword');
-
+            
             if(formPassword.val().length < 6) {
                 alert('Password must be longer than 6 characters');
                 formPassword.val('');
@@ -76,9 +69,9 @@
                 },
                 success: function (data) {
                     if (data.error) {
-                        // $('#frmLoginUsername').text('');
+                         $('#frmLoginUsername').text('');
 
-                        alert(data.error.msg);
+                         alert(data.error.msg);
                     } else {
                         alert(data.result);
 

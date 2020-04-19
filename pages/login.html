@@ -31,14 +31,15 @@
                 },
                 success: function (data) {
                     if (data.error) {
-                        $('#frmLoginUsername').text('');
+                        $('#frmLoginPassword').text('');
+                        $('#frmBtnLogin').text("Log in");
 
                         alert(data.error.msg);
                     } else {
+                        location.reload();
                         alert(data.result);
                     }
 
-                    $('#frmBtnLogin').text("Log in");
                 }
             });
         });

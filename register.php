@@ -4,7 +4,7 @@
 <link rel="stylesheet" type="text/css" href="../css/auth.css">
 <body>
 <?php
-  require_once('./include/navbar.html');
+  require_once('./include/navbar.php');
   require_once('./pages/register.html');
   require_once('./include/footer.html');
 ?>

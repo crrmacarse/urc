@@ -1,4 +1,7 @@
-<?php require_once('./path.php'); ?>
+<?php
+require_once('./path.php');
+session_start();
+?>
 
 <head>
     <meta charset="utf-8">
