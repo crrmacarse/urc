@@ -1,5 +1,5 @@
 <?php
-session_start();
+require_once('./include/header.php');
 session_destroy();
-header("Location: index.php");
+header("location: ./login.php");  
 ?>

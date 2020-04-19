@@ -30,19 +30,17 @@
                     $('#frmBtnLogin').text("Logging in");
                 },
                 success: function (data) {
-                    if(data.result != null && data.result == "ok"){
-
-                        window.location.replace("http://google.com");
-                    }
-                    else if (data.error) {
-                        $('#frmLoginUsername').text('');
-                        $('#frmLogin').trigger("reset");
+                    if (data.error) {
+                        $('#frmLoginPassword').text('');
+                        $('#frmBtnLogin').text("Log in");
 
                         alert(data.error.msg);
+                    } else {
+                        location.reload();
+                        alert(data.result);
+                    }
 
-                    $('#frmBtnLogin').text("Log in");
                 }
-            }
             });
         });
     });

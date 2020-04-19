@@ -1,11 +1,10 @@
-<?php 
-session_start();
-if(!isset($_SESSION['loggedin'])){
-  header("location: ./index.php");
+<?php
+require_once('./include/header.php');
 
-  exit();
+// Check if usertype is admin
+if($_SESSION['usertype'] !== 'admin') {
+  header("location: ./index.php");  
 }
-
 ?>
 <!DOCTYPE html>
 <html>
